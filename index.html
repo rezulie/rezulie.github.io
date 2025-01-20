@@ -1,1 +1,148 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site Under Construction</title>
+    <style>
+        /* Base Reset & Fonts */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Helvetica Neue", Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background: #f8f9fa;
+        }
+
+        /* Top Wave Container */
+        .top-wave {
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+
+        /* Bottom Wave Container */
+        .bottom-wave {
+            margin-top: auto;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            transform: rotate(180deg);
+        }
+
+        /* Main Content */
+        .construction-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        .construction-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #343a40;
+        }
+
+        .construction-section p {
+            font-size: 1.1rem;
+            color: #6c757d;
+            margin-bottom: 2rem;
+            max-width: 600px;
+        }
+
+        /* Illustration (centered SVG) */
+        .illustration {
+            max-width: 300px;
+            margin-bottom: 2rem;
+        }
+
+        /* Buttons or Additional Links (optional) */
+        .construction-section a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #007bff;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.25rem;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+
+        .construction-section a:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive Media Queries */
+        @media (max-width: 600px) {
+            .construction-section h1 {
+                font-size: 2rem;
+            }
+
+            .construction-section p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Top Wave (Animated) -->
+    <div class="top-wave">
+        <svg width="100%" height="100px" viewBox="0 0 1440 320" preserveAspectRatio="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill="#00b4d8" fill-opacity="1"
+                d="M0,256L48,234.7C96,213,192,171,288,176C384,181,480,235,576,218.7C672,203,768,117,864,85.3C960,53,1056,75,1152,74.7C1248,75,1344,53,1392,42.7L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+                <!-- Animate the 'd' attribute to morph between multiple path shapes -->
+                <animate attributeName="d" dur="6s" repeatCount="indefinite" values="
+            M0,256L48,234.7C96,213,192,171,288,176C384,181,480,235,576,218.7C672,203,768,117,864,85.3C960,53,1056,75,1152,74.7C1248,75,1344,53,1392,42.7L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z;
+            
+            M0,256L50,210C100,160,200,60,300,80C400,100,500,240,600,200C700,160,800,20,900,30C1000,40,1100,80,1200,100C1300,120,1400,60,1450,40L1440,30L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z;
+  
+            M0,256L48,234.7C96,213,192,171,288,176C384,181,480,235,576,218.7C672,203,768,117,864,85.3C960,53,1056,75,1152,74.7C1248,75,1344,53,1392,42.7L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z
+          " />
+            </path>
+        </svg>
+    </div>
+
+
+    <!-- Main Construction Section -->
+    <section class="construction-section">
+        <h1>Site Under Construction</h1>
+        <p>We're busy building something awesome! Please check back soon for updates.</p>
+
+        <!-- (Optional) Button or Link -->
+        <a href="mailto:info@rezulie.ventures">Contact Us</a>
+    </section>
+
+    <!-- Bottom Wave (Animated) -->
+    <div class="bottom-wave">
+        <svg width="100%" height="100px" viewBox="0 0 1440 320" preserveAspectRatio="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill="#00b4d8" fill-opacity="1"
+                d="M0,256L48,234.7C96,213,192,171,288,176C384,181,480,235,576,218.7C672,203,768,117,864,85.3C960,53,1056,75,1152,74.7C1248,75,1344,53,1392,42.7L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                <!-- Animate the 'd' attribute to morph between multiple path shapes -->
+                <animate attributeName="d" dur="6s" repeatCount="indefinite" values="
+            M0,256L48,234.7C96,213,192,171,288,176C384,181,480,235,576,218.7C672,203,768,117,864,85.3C960,53,1056,75,1152,74.7C1248,75,1344,53,1392,42.7L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;
+            
+            M0,256L50,220C100,184,200,104,300,130C400,156,500,244,600,240C700,236,800,132,900,95C1000,58,1100,74,1200,78.7C1300,83,1400,53,1450,38L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;
+  
+            M0,256L48,234.7C96,213,192,171,288,176C384,181,480,235,576,218.7C672,203,768,117,864,85.3C960,53,1056,75,1152,74.7C1248,75,1344,53,1392,42.7L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z
+          " />
+            </path>
+        </svg>
+    </div>
+
+
+</body>
+
+</html>
