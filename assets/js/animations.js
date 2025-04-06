@@ -40,36 +40,124 @@ function initScrollReveal() {
 
 // Particle background effect
 function initParticles() {
-  const heroSections = document.querySelectorAll('.hero');
+  const heroSections = document.querySelectorAll('.particles-container');
   
-  heroSections.forEach(section => {
-    // Create particle container
-    const particleContainer = document.createElement('div');
-    particleContainer.className = 'particles-container';
-    section.appendChild(particleContainer);
+  heroSections.forEach(container => {
+    // Clear existing particles
+    container.innerHTML = '';
     
-    // Add particles
-    for (let i = 0; i < 10; i++) {
+    // Create particles
+    const particles = [];
+    const particleCount = 15;
+    
+    for (let i = 0; i < particleCount; i++) {
       const particle = document.createElement('div');
       particle.className = 'particle';
       
-      // Smaller particles
-      const size = Math.random() * 10 + 5;
+      // Random size (smaller particles)
+      const size = Math.random() * 15 + 5;
       particle.style.width = `${size}px`;
       particle.style.height = `${size}px`;
       
-      // Random position, slower animation and random delay
+      // Random position
       const posX = Math.random() * 100;
       const posY = Math.random() * 100;
+      
+      // Random velocity
+      const vx = (Math.random() - 0.5) * 0.2;
+      const vy = (Math.random() - 0.5) * 0.2;
+      
+      // Random opacity
+      const opacity = Math.random() * 0.5 + 0.2;
+      particle.style.opacity = opacity;
+      
+      // Store particle properties
+      particles.push({
+        element: particle,
+        x: posX,
+        y: posY,
+        vx: vx,
+        vy: vy,
+        size: size
+      });
+      
+      // Set initial position
       particle.style.left = `${posX}%`;
       particle.style.top = `${posY}%`;
-      const duration = Math.random() * 10 + 15;
-      particle.style.animationDuration = `${duration}s`;
-      const delay = Math.random() * 5;
-      particle.style.animationDelay = `${delay}s`;
       
-      particleContainer.appendChild(particle);
+      container.appendChild(particle);
     }
+    
+    // Animate particles
+    function animateParticles() {
+      const containerRect = container.getBoundingClientRect();
+      
+      particles.forEach((p, index) => {
+        // Update position based on velocity
+        p.x += p.vx;
+        p.y += p.vy;
+        
+        // Boundary collision detection
+        if (p.x < 0 || p.x > 100) {
+          p.vx = -p.vx;
+          p.x = Math.max(0, Math.min(100, p.x));
+        }
+        
+        if (p.y < 0 || p.y > 100) {
+          p.vy = -p.vy;
+          p.y = Math.max(0, Math.min(100, p.y));
+        }
+        
+        // Particle collision detection
+        for (let j = index + 1; j < particles.length; j++) {
+          const p2 = particles[j];
+          
+          // Calculate distance between particles
+          const dx = (p.x - p2.x) / 100 * containerRect.width;
+          const dy = (p.y - p2.y) / 100 * containerRect.height;
+          const distance = Math.sqrt(dx * dx + dy * dy);
+          
+          // Check for collision
+          if (distance < (p.size + p2.size) / 2) {
+            // Simple elastic collision
+            const angle = Math.atan2(dy, dx);
+            const sin = Math.sin(angle);
+            const cos = Math.cos(angle);
+            
+            // Rotate velocities
+            const vx1 = p.vx * cos + p.vy * sin;
+            const vy1 = p.vy * cos - p.vx * sin;
+            const vx2 = p2.vx * cos + p2.vy * sin;
+            const vy2 = p2.vy * cos - p2.vx * sin;
+            
+            // Swap velocities
+            p.vx = vx2 * cos - vy1 * sin;
+            p.vy = vy1 * cos + vx2 * sin;
+            p2.vx = vx1 * cos - vy2 * sin;
+            p2.vy = vy2 * cos + vx1 * sin;
+            
+            // Move particles apart to prevent sticking
+            const overlap = (p.size + p2.size) / 2 - distance;
+            const moveX = overlap * cos / 200; // Divide by 200 to convert to percentage
+            const moveY = overlap * sin / 200;
+            
+            p.x -= moveX;
+            p.y -= moveY;
+            p2.x += moveX;
+            p2.y += moveY;
+          }
+        }
+        
+        // Update DOM
+        p.element.style.left = `${p.x}%`;
+        p.element.style.top = `${p.y}%`;
+      });
+      
+      requestAnimationFrame(animateParticles);
+    }
+    
+    // Start animation
+    animateParticles();
   });
 }
 

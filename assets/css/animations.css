@@ -271,6 +271,38 @@
   color: white;
 }
 
+/* Particles */
+.particles-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.particle {
+  position: absolute;
+  background-color: rgba(74, 111, 165, 0.2);
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(74, 111, 165, 0.1);
+  pointer-events: none;
+  transition: transform 0.3s ease;
+}
+
+/* Add a subtle glow effect to particles */
+.particle::after {
+  content: '';
+  position: absolute;
+  top: -30%;
+  left: -30%;
+  width: 160%;
+  height: 160%;
+  background: radial-gradient(circle, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0) 70%);
+  opacity: 0.5;
+}
+
 /* Reduce Motion for Accessibility */
 @media (prefers-reduced-motion: reduce) {
   * {
