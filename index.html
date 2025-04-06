@@ -1,148 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Site Under Construction</title>
-    <style>
-        /* Base Reset & Fonts */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "Helvetica Neue", Arial, sans-serif;
-        }
-
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            background: #f8f9fa;
-        }
-
-        /* Top Wave Container */
-        .top-wave {
-            width: 100%;
-            overflow: hidden;
-            line-height: 0;
-        }
-
-        /* Bottom Wave Container */
-        .bottom-wave {
-            margin-top: auto;
-            width: 100%;
-            overflow: hidden;
-            line-height: 0;
-            transform: rotate(180deg);
-        }
-
-        /* Main Content */
-        .construction-section {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 2rem 1rem;
-        }
-
-        .construction-section h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: #343a40;
-        }
-
-        .construction-section p {
-            font-size: 1.1rem;
-            color: #6c757d;
-            margin-bottom: 2rem;
-            max-width: 600px;
-        }
-
-        /* Illustration (centered SVG) */
-        .illustration {
-            max-width: 300px;
-            margin-bottom: 2rem;
-        }
-
-        /* Buttons or Additional Links (optional) */
-        .construction-section a {
-            text-decoration: none;
-            color: #fff;
-            background-color: #007bff;
-            padding: 0.75rem 1.25rem;
-            border-radius: 0.25rem;
-            font-weight: 500;
-            transition: background-color 0.3s;
-        }
-
-        .construction-section a:hover {
-            background-color: #0056b3;
-        }
-
-        /* Responsive Media Queries */
-        @media (max-width: 600px) {
-            .construction-section h1 {
-                font-size: 2rem;
-            }
-
-            .construction-section p {
-                font-size: 1rem;
-            }
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezulie Ventures | ML & Computer Vision Consulting</title>
+    <meta name="description" content="Helping startups turn AI ideas into production-ready products. ML, Computer Vision, and ML Infrastructure consulting for startups. Innovate. Automate. Accelerate.">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Rezulie Ventures | ML & Computer Vision Consulting">
+    <meta property="og:description" content="Helping startups turn AI ideas into production-ready products. Innovate. Automate. Accelerate.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rezulie.ventures">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 </head>
-
 <body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="/"><img src="assets/images/logo-horizonal-name.png" alt="Rezulie Ventures" height="50"></a>
+            </div>
+            <nav>
+                <button class="mobile-menu-btn">☰</button>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/services.html">Services</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <!-- Top Wave (Animated) -->
-    <div class="top-wave">
-        <svg width="100%" height="100px" viewBox="0 0 1440 320" preserveAspectRatio="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path fill="#00b4d8" fill-opacity="1"
-                d="M0,256L48,234.7C96,213,192,171,288,176C384,181,480,235,576,218.7C672,203,768,117,864,85.3C960,53,1056,75,1152,74.7C1248,75,1344,53,1392,42.7L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
-                <!-- Animate the 'd' attribute to morph between multiple path shapes -->
-                <animate attributeName="d" dur="6s" repeatCount="indefinite" values="
-            M0,256L48,234.7C96,213,192,171,288,176C384,181,480,235,576,218.7C672,203,768,117,864,85.3C960,53,1056,75,1152,74.7C1248,75,1344,53,1392,42.7L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z;
-            
-            M0,256L50,210C100,160,200,60,300,80C400,100,500,240,600,200C700,160,800,20,900,30C1000,40,1100,80,1200,100C1300,120,1400,60,1450,40L1440,30L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z;
-  
-            M0,256L48,234.7C96,213,192,171,288,176C384,181,480,235,576,218.7C672,203,768,117,864,85.3C960,53,1056,75,1152,74.7C1248,75,1344,53,1392,42.7L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z
-          " />
-            </path>
-        </svg>
-    </div>
-
-
-    <!-- Main Construction Section -->
-    <section class="construction-section">
-        <h1>Site Under Construction</h1>
-        <p>We're busy building something awesome! Please check back soon for updates.</p>
-
-        <!-- (Optional) Button or Link -->
-        <a href="mailto:info@rezulie.ventures">Contact Us</a>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Helping startups turn AI ideas into production-ready products.</h1>
+            <p class="slogan" style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1.5rem; color: var(--accent-color);">Innovate. Automate. Accelerate.</p>
+            <p>Rezulie Ventures is led by <a href="https://shafaei.ai" target="_blank">Alireza Shafaei</a>, Ph.D. in Machine Learning and former CTO of <a href="https://skylabtech.ai" target="_blank">Skylab</a> (<a href="https://www.cs.ubc.ca/news/2024/01/imagequix-has-acquired-skylab-start-co-owned-alireza-shafaei" target="_blank">acquired</a>). We help startups build scalable ML systems.</p>
+            <a href="/contact.html" class="btn btn-primary">Let's Work Together</a>
+        </div>
     </section>
 
-    <!-- Bottom Wave (Animated) -->
-    <div class="bottom-wave">
-        <svg width="100%" height="100px" viewBox="0 0 1440 320" transform="scale(2,-2)" preserveAspectRatio="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path fill="#00b4d8" fill-opacity="1"
-                d="M0,256L48,234.7C96,213,192,171,288,176C384,181,480,235,576,218.7C672,203,768,117,864,85.3C960,53,1056,75,1152,74.7C1248,75,1344,53,1392,42.7L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-                <!-- Animate the 'd' attribute to morph between multiple path shapes -->
-                <animate attributeName="d" dur="6s" repeatCount="indefinite" values="
-            M0,256L48,234.7C96,213,192,171,288,176C384,181,480,235,576,218.7C672,203,768,117,864,85.3C960,53,1056,75,1152,74.7C1248,75,1344,53,1392,42.7L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;
-            
-            M0,256L50,220C100,184,200,104,300,130C400,156,500,244,600,240C700,236,800,132,900,95C1000,58,1100,74,1200,78.7C1300,83,1400,53,1450,38L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;
-  
-            M0,256L48,234.7C96,213,192,171,288,176C384,181,480,235,576,218.7C672,203,768,117,864,85.3C960,53,1056,75,1152,74.7C1248,75,1344,53,1392,42.7L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z
-          " />
-            </path>
-        </svg>
-    </div>
+    <!-- Services Preview Section -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="section-title">
+                <h2>Services</h2>
+                <p>Practical ML consulting for early-stage products</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Machine Learning</h3>
+                    <p>Custom model development, fine-tuning, and experimentation to solve your specific business problems.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Computer Vision</h3>
+                    <p>Object detection, segmentation, and classification solutions for visual data processing needs.</p>
+                </div>
+                <div class="service-card">
+                    <h3>ML Infrastructure</h3>
+                    <p>Cloud deployment, CI/CD pipelines, monitoring, and scaling for production ML systems.</p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="/services.html" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
 
+    <!-- Mini Bio Section -->
+    <section class="section section-light">
+        <div class="container">
+            <div class="about-content">
+                <div>
+                    <h2>About Rezulie Ventures</h2>
+                    <p>Rezulie Ventures brings production-level ML expertise to early-stage startups. With a background in both academic research and industry leadership, we bridge the gap between cutting-edge AI research and practical business applications.</p>
+                    <p>Having built and scaled ML systems from prototype to production at <a href="https://skylabtech.ai" target="_blank">Skylab</a>, we understand the challenges of turning promising AI ideas into reliable products that deliver real value.</p>
+                    <a href="/about.html" class="btn btn-secondary">More About Us</a>
+                </div>
+                <div class="about-image">
+                    <img src="assets/images/logo-stacked-name.png" alt="Rezulie Ventures" width="400">
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to build your ML product?</h2>
+            <p>Let's discuss how we can help turn your AI vision into reality.</p>
+            <p class="slogan" style="font-weight: 600; margin-bottom: 1.5rem;">Innovate. Automate. Accelerate.</p>
+            <a href="/contact.html" class="btn btn-primary">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Rezulie Ventures</h3>
+                    <p>Helping startups build production-ready ML systems.</p>
+                    <p><em>Innovate. Automate. Accelerate.</em></p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/services.html">Services</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li><a href="mailto:info@rezulie.ventures">info@rezulie.ventures</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; <script>document.write(new Date().getFullYear())</script> Rezulie Ventures Inc. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
 </body>
-
 </html>
