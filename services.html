@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services | Rezulie Ventures</title>
-    <meta name="description" content="Practical ML consulting for early-stage products. Machine Learning, Computer Vision, ML Infrastructure, and Fractional CTO services. Innovate. Automate. Accelerate.">
+    <meta name="description" content="Specialized ML consulting services including Machine Learning, Computer Vision, and ML Infrastructure solutions. Innovate. Automate. Accelerate.">
     
     <!-- Open Graph / Social Media Meta Tags -->
     <meta property="og:title" content="Services | Rezulie Ventures">
-    <meta property="og:description" content="Practical ML consulting for early-stage products. Machine Learning, Computer Vision, ML Infrastructure, and Fractional CTO services. Innovate. Automate. Accelerate.">
+    <meta property="og:description" content="Specialized ML consulting services including Machine Learning, Computer Vision, and ML Infrastructure solutions. Innovate. Automate. Accelerate.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://rezulie.ventures/services.html">
     
@@ -19,9 +19,121 @@
     
     <!-- Styles -->
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
     
     <!-- Favicon -->
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    
+    <style>
+        .service-detail {
+            margin-bottom: 4rem;
+            padding: 2rem;
+            border-radius: 8px;
+            background-color: var(--bg-light);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .service-detail:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .service-detail h3 {
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+        
+        .service-detail ul {
+            margin-top: 1rem;
+            padding-left: 1.5rem;
+        }
+        
+        .service-detail ul li {
+            margin-bottom: 0.5rem;
+            position: relative;
+        }
+        
+        .service-detail ul li::before {
+            content: "•";
+            color: var(--accent-color);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        
+        .process-step {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0.05);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        
+        .process-step:hover {
+            transform: translateY(-3px);
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        .step-number {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: var(--accent-color);
+            color: white;
+            font-weight: bold;
+            margin-right: 1.5rem;
+            flex-shrink: 0;
+        }
+        
+        .step-content {
+            flex: 1;
+        }
+        
+        .step-content h4 {
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Particle Animation Styles */
+        .particles-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        .particle {
+            position: absolute;
+            background-color: rgba(74, 111, 165, 0.2);
+            border-radius: 50%;
+            animation: float 15s linear infinite;
+        }
+        
+        .hero {
+            position: relative;
+        }
+        
+        .hero .container {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .slogan {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--accent-color);
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
@@ -44,108 +156,122 @@
 
     <!-- Services Hero Section -->
     <section class="hero">
+        <div class="particles-container" id="particles-hero"></div>
         <div class="container">
-            <h1>Practical ML consulting for early-stage products</h1>
-            <p>We help startups navigate the complexities of machine learning implementation, from concept to production.</p>
-            <p class="slogan" style="font-size: 1.5rem; font-weight: 600; margin-top: 1rem; color: var(--accent-color);">Innovate. Automate. Accelerate.</p>
+            <h1 class="animate-fade-in">Our Services</h1>
+            <p>Specialized ML consulting for startups and technical teams</p>
+            <p class="slogan">Innovate. Automate. Accelerate.</p>
         </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- Services Overview Section -->
     <section class="section section-light">
         <div class="container">
             <div class="section-title">
-                <h2>Our Services</h2>
+                <h2>Core Services</h2>
+                <p>Rezulie Ventures offers specialized consulting services in three core areas:</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Machine Learning</h3>
+                    <p>End-to-end ML solutions from concept to deployment, with a focus on practical applications that deliver business value.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Computer Vision</h3>
+                    <p>Custom computer vision systems that extract meaningful insights from visual data for diverse industry applications.</p>
+                </div>
+                <div class="service-card">
+                    <h3>ML Infrastructure</h3>
+                    <p>Scalable, production-ready ML infrastructure that ensures reliable model deployment, monitoring, and maintenance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Services Section -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="section-title">
+                <h2>Service Details</h2>
+                <p>Explore our specialized offerings in each service area</p>
             </div>
             
-            <!-- Machine Learning -->
-            <div style="margin-bottom: 4rem;">
+            <div class="service-detail">
                 <h3>Machine Learning</h3>
-                <div class="about-content">
-                    <div>
-                        <p>Our machine learning services help you develop custom models tailored to your specific business needs. Whether you're starting from scratch or looking to fine-tune existing models, we provide end-to-end support.</p>
-                        
-                        <ul style="margin-bottom: 1.5rem; margin-left: 1.5rem;">
-                            <li>Custom model development for specific use cases</li>
-                            <li>Model fine-tuning and optimization</li>
-                            <li>Experimentation frameworks and processes</li>
-                            <li>Data pipeline design and implementation</li>
-                            <li>Performance evaluation and benchmarking</li>
-                        </ul>
-                        
-                        <p>We specialize in practical applications of neural networks, reinforcement learning, and generative models that deliver tangible business value.</p>
-                    </div>
-                    <div class="about-image">
-                        <img src="assets/images/logo.png" alt="Machine Learning Services" width="300">
-                    </div>
-                </div>
+                <p>Our machine learning services cover the full spectrum of ML development, from initial concept to production deployment:</p>
+                <ul>
+                    <li>ML strategy development and roadmapping</li>
+                    <li>Custom model development for specific business problems</li>
+                    <li>Model optimization and performance tuning</li>
+                    <li>Integration of ML models with existing systems</li>
+                    <li>Training and knowledge transfer for internal teams</li>
+                </ul>
             </div>
             
-            <!-- Computer Vision -->
-            <div style="margin-bottom: 4rem;">
+            <div class="service-detail">
                 <h3>Computer Vision</h3>
-                <div class="about-content" style="flex-direction: row-reverse;">
-                    <div>
-                        <p>Our computer vision expertise enables you to extract valuable insights from visual data. We build systems that can see, understand, and make decisions based on images and video.</p>
-                        
-                        <ul style="margin-bottom: 1.5rem; margin-left: 1.5rem;">
-                            <li>Object detection and tracking systems</li>
-                            <li>Image segmentation solutions</li>
-                            <li>Classification and recognition models</li>
-                            <li>Video analysis frameworks</li>
-                            <li>Real-time processing pipelines</li>
-                        </ul>
-                        
-                        <p>Our computer vision solutions are designed to work reliably in real-world conditions, handling challenges like varying lighting, occlusion, and scale.</p>
-                    </div>
-                    <div class="about-image">
-                        <img src="assets/images/logo.png" alt="Computer Vision Services" width="300">
-                    </div>
-                </div>
+                <p>Our computer vision expertise enables businesses to extract valuable insights from visual data:</p>
+                <ul>
+                    <li>Object detection and recognition systems</li>
+                    <li>Image segmentation and classification</li>
+                    <li>Visual search and similarity matching</li>
+                    <li>Video analysis and processing</li>
+                    <li>AR/VR data processing pipelines</li>
+                </ul>
             </div>
             
-            <!-- ML Infrastructure -->
-            <div style="margin-bottom: 4rem;">
+            <div class="service-detail">
                 <h3>ML Infrastructure</h3>
-                <div class="about-content">
-                    <div>
-                        <p>Building ML models is just the beginning. Our ML infrastructure services help you deploy, scale, and maintain your models in production environments.</p>
-                        
-                        <ul style="margin-bottom: 1.5rem; margin-left: 1.5rem;">
-                            <li>Cloud deployment architectures (AWS, GCP, Azure)</li>
-                            <li>CI/CD pipelines for ML workflows</li>
-                            <li>Monitoring and observability solutions</li>
-                            <li>Scaling strategies for growing demand</li>
-                            <li>Cost optimization for ML operations</li>
-                        </ul>
-                        
-                        <p>We bring production-level thinking to your ML infrastructure, ensuring reliability, performance, and maintainability as your business grows.</p>
-                    </div>
-                    <div class="about-image">
-                        <img src="assets/images/logo.png" alt="ML Infrastructure Services" width="300">
-                    </div>
-                </div>
+                <p>We help build robust infrastructure to support your ML systems in production:</p>
+                <ul>
+                    <li>ML pipeline design and implementation</li>
+                    <li>Model serving architecture development</li>
+                    <li>Monitoring and observability solutions</li>
+                    <li>CI/CD for ML workflows</li>
+                    <li>MLOps best practices implementation</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Process Section -->
+    <section class="section section-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Process</h2>
+                <p>How we work with clients to deliver exceptional results</p>
             </div>
             
-            <!-- Fractional CTO -->
-            <div>
-                <h3>Fractional CTO (Optional)</h3>
-                <div class="about-content" style="flex-direction: row-reverse;">
-                    <div>
-                        <p>For startups without a dedicated technical leader, our fractional CTO service provides strategic guidance and technical oversight on a part-time basis.</p>
-                        
-                        <ul style="margin-bottom: 1.5rem; margin-left: 1.5rem;">
-                            <li>Technical strategy development</li>
-                            <li>Engineering team hiring and mentoring</li>
-                            <li>Architecture planning and review</li>
-                            <li>Product roadmap development</li>
-                            <li>Technical due diligence support</li>
-                        </ul>
-                        
-                        <p>Our fractional CTO service is designed to provide the technical leadership you need without the cost of a full-time executive.</p>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Discovery & Assessment</h4>
+                        <p>We begin by thoroughly understanding your business needs, technical requirements, and existing systems to identify the most effective ML approach.</p>
                     </div>
-                    <div class="about-image">
-                        <img src="assets/images/logo.png" alt="Fractional CTO Services" width="300">
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Strategy & Planning</h4>
+                        <p>Based on our assessment, we develop a comprehensive strategy and implementation plan with clear milestones, deliverables, and success metrics.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Implementation</h4>
+                        <p>Our team works closely with yours to implement the solution, following agile methodologies to ensure rapid progress and continuous feedback.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Deployment & Knowledge Transfer</h4>
+                        <p>We deploy the solution to production and provide comprehensive knowledge transfer to ensure your team can maintain and extend the system independently.</p>
                     </div>
                 </div>
             </div>
@@ -153,11 +279,11 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="cta">
+    <section class="cta gradient-bg">
         <div class="container">
-            <h2>Ready to leverage ML for your startup?</h2>
-            <p>Let's discuss how our services can help you build and scale your ML-powered product.</p>
-            <p class="slogan" style="font-weight: 600; margin-bottom: 1.5rem;">Innovate. Automate. Accelerate.</p>
+            <h2>Ready to transform your business with ML?</h2>
+            <p>Let's discuss how our services can address your specific needs.</p>
+            <p class="slogan">Innovate. Automate. Accelerate.</p>
             <a href="/contact.html" class="btn btn-primary">Contact Us</a>
         </div>
     </section>
@@ -174,16 +300,16 @@
                 <div class="footer-column">
                     <h3>Quick Links</h3>
                     <ul class="footer-links">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/about.html">About</a></li>
-                        <li><a href="/services.html">Services</a></li>
-                        <li><a href="/contact.html">Contact</a></li>
+                        <li><a href="/" class="hover-lift">Home</a></li>
+                        <li><a href="/about.html" class="hover-lift">About</a></li>
+                        <li><a href="/services.html" class="hover-lift">Services</a></li>
+                        <li><a href="/contact.html" class="hover-lift">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
                     <h3>Contact</h3>
                     <ul class="footer-links">
-                        <li><a href="mailto:info@rezulie.ventures">info@rezulie.ventures</a></li>
+                        <li><a href="mailto:info@rezulie.ventures" class="hover-lift">info@rezulie.ventures</a></li>
                     </ul>
                 </div>
             </div>
@@ -195,5 +321,6 @@
 
     <!-- Scripts -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/animations.js"></script>
 </body>
 </html>

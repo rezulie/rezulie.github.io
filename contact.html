@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Rezulie Ventures</title>
-    <meta name="description" content="Get in touch with Rezulie Ventures to discuss your ML and Computer Vision projects. We're always happy to discuss new ideas. Innovate. Automate. Accelerate.">
+    <meta name="description" content="Get in touch with Rezulie Ventures for specialized ML consulting services. Innovate. Automate. Accelerate.">
     
     <!-- Open Graph / Social Media Meta Tags -->
     <meta property="og:title" content="Contact | Rezulie Ventures">
-    <meta property="og:description" content="Get in touch with Rezulie Ventures to discuss your ML and Computer Vision projects. Innovate. Automate. Accelerate.">
+    <meta property="og:description" content="Get in touch with Rezulie Ventures for specialized ML consulting services. Innovate. Automate. Accelerate.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://rezulie.ventures/contact.html">
     
@@ -19,9 +19,115 @@
     
     <!-- Styles -->
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
     
     <!-- Favicon -->
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    
+    <style>
+        .contact-methods {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .contact-method {
+            flex: 1;
+            min-width: 300px;
+            padding: 2rem;
+            background-color: var(--bg-light);
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .contact-method:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .contact-method h3 {
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+        
+        .contact-method p {
+            margin-bottom: 1.5rem;
+        }
+        
+        .contact-icon {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 60px;
+            background-color: rgba(74, 111, 165, 0.1);
+            border-radius: 50%;
+            margin-bottom: 1.5rem;
+            color: var(--accent-color);
+            font-size: 1.5rem;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        
+        .contact-method:hover .contact-icon {
+            transform: scale(1.1);
+            background-color: rgba(74, 111, 165, 0.2);
+        }
+        
+        .contact-info {
+            margin-top: 3rem;
+            text-align: center;
+        }
+        
+        .contact-info p {
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-info a {
+            color: var(--accent-color);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .contact-info a:hover {
+            color: var(--primary-color);
+        }
+        
+        /* Particle Animation Styles */
+        .particles-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        .particle {
+            position: absolute;
+            background-color: rgba(74, 111, 165, 0.2);
+            border-radius: 50%;
+            animation: float 15s linear infinite;
+        }
+        
+        .hero {
+            position: relative;
+        }
+        
+        .hero .container {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .slogan {
+            font-weight: 700;
+            font-size: 1.4rem;
+            color: #ffffff;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
@@ -44,43 +150,95 @@
 
     <!-- Contact Hero Section -->
     <section class="hero">
+        <div class="particles-container" id="particles-hero"></div>
         <div class="container">
-            <h1>Let's Work Together</h1>
-            <p>I'm always happy to discuss new ideas. Reach out and let's chat.</p>
-            <p class="slogan" style="font-size: 1.5rem; font-weight: 600; margin-top: 1rem; color: var(--accent-color);">Innovate. Automate. Accelerate.</p>
+            <h1 class="animate-fade-in">Get in Touch</h1>
+            <p>Let's discuss how we can help with your ML project</p>
+            <p class="slogan">Innovate. Automate. Accelerate.</p>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact Methods Section -->
     <section class="section section-light">
         <div class="container">
             <div class="section-title">
-                <h2>Get in Touch</h2>
+                <h2>Contact Methods</h2>
+                <p>Choose the best way to connect with us</p>
             </div>
             
-            <div class="contact-form" style="text-align: center;">
-                <div style="max-width: 600px; margin: 0 auto;">
-                    <img src="assets/images/logo-stacked-name.png" alt="Rezulie Ventures" width="300" style="margin-bottom: 2rem;">
-                    
-                    <p style="font-size: 1.2rem; margin-bottom: 2rem;">Ready to discuss your ML project? Send us an email and we'll get back to you as soon as possible.</p>
-                    
-                    <a href="mailto:info@rezulie.ventures" class="btn btn-primary" style="font-size: 1.2rem; padding: 1rem 2rem;">Email Us at info@rezulie.ventures</a>
+            <div class="contact-methods">
+                <div class="contact-method">
+                    <div class="contact-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                        </svg>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>For project inquiries, questions, or to schedule a consultation, email is the best way to reach us.</p>
+                    <a href="mailto:info@rezulie.ventures" class="btn btn-primary email-btn">Email Us at info@rezulie.ventures</a>
                 </div>
                 
-                <!-- Calendly section commented out for future use
-                <div style="margin-top: 3rem;">
-                    <h3>Schedule a Call</h3>
-                    <p>If you'd prefer to schedule a call directly, you can use the calendar below to find a time that works for you.</p>
-                    
-                    <div class="calendly-inline-widget" data-url="https://calendly.com/YOUR_CALENDLY_LINK" style="min-width:320px;height:630px;"></div>
-                    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-                    
-                    <div style="background-color: var(--light-gray); height: 300px; display: flex; justify-content: center; align-items: center; border-radius: 8px; margin-top: 1rem;">
-                        <p>Calendly scheduling widget will appear here</p>
+                <div class="contact-method">
+                    <div class="contact-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                        </svg>
                     </div>
+                    <h3>Connect on LinkedIn</h3>
+                    <p>Follow Alireza on LinkedIn for updates, insights, and to connect professionally.</p>
+                    <a href="https://www.linkedin.com/in/ashafaei/" target="_blank" class="btn btn-secondary">Visit LinkedIn Profile</a>
                 </div>
-                -->
             </div>
+            
+            <!-- Calendly integration (commented out for future use) -->
+            <!--
+            <div class="section-title" style="margin-top: 4rem;">
+                <h2>Schedule a Consultation</h2>
+                <p>Book a time that works for you using our online scheduling system</p>
+            </div>
+            
+            <div style="min-height: 650px;">
+                <div class="calendly-inline-widget" data-url="https://calendly.com/rezulie-ventures/consultation" style="min-width:320px;height:650px;"></div>
+                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+            </div>
+            -->
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Common questions about working with Rezulie Ventures</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <h3>What types of projects do you typically work on?</h3>
+                    <p>We specialize in ML projects across various domains, with a focus on computer vision, natural language processing, and predictive analytics. Our expertise is particularly valuable for startups looking to integrate ML capabilities into their products or optimize existing ML systems.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>How long does a typical engagement last?</h3>
+                    <p>Engagement length varies based on project scope and complexity. We offer both short-term consulting (2-4 weeks) for specific challenges and longer-term partnerships (3-6 months) for comprehensive ML implementation. We'll work with you to determine the appropriate timeline for your needs.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>What is your approach to knowledge transfer?</h3>
+                    <p>Knowledge transfer is a core part of our process. We document our work thoroughly, provide code reviews and explanations, and conduct training sessions with your team. Our goal is to ensure your team can maintain and extend the ML systems we build together.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta gradient-bg">
+        <div class="container">
+            <h2>Ready to start your ML journey?</h2>
+            <p>Reach out today to discuss your project needs.</p>
+            <p class="slogan">Innovate. Automate. Accelerate.</p>
+            <a href="mailto:info@rezulie.ventures" class="btn btn-primary email-btn">Email Us at info@rezulie.ventures</a>
         </div>
     </section>
 
@@ -96,16 +254,16 @@
                 <div class="footer-column">
                     <h3>Quick Links</h3>
                     <ul class="footer-links">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/about.html">About</a></li>
-                        <li><a href="/services.html">Services</a></li>
-                        <li><a href="/contact.html">Contact</a></li>
+                        <li><a href="/" class="hover-lift">Home</a></li>
+                        <li><a href="/about.html" class="hover-lift">About</a></li>
+                        <li><a href="/services.html" class="hover-lift">Services</a></li>
+                        <li><a href="/contact.html" class="hover-lift">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
                     <h3>Contact</h3>
                     <ul class="footer-links">
-                        <li><a href="mailto:info@rezulie.ventures">info@rezulie.ventures</a></li>
+                        <li><a href="mailto:info@rezulie.ventures" class="hover-lift">info@rezulie.ventures</a></li>
                     </ul>
                 </div>
             </div>
@@ -117,5 +275,6 @@
 
     <!-- Scripts -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/animations.js"></script>
 </body>
 </html>

@@ -19,6 +19,7 @@
     
     <!-- Styles -->
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
     
     <!-- Favicon -->
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
@@ -28,6 +29,12 @@
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+        }
+        
+        .profile-image:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
         }
         
         .social-links {
@@ -39,10 +46,65 @@
             align-items: center;
             margin-right: 1rem;
             font-weight: 500;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            transform: translateY(-3px);
+            color: var(--accent-color);
         }
         
         .social-links a svg {
             margin-right: 0.5rem;
+        }
+        
+        /* Particle Animation Styles */
+        .particles-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        .particle {
+            position: absolute;
+            background-color: rgba(74, 111, 165, 0.2);
+            border-radius: 50%;
+            animation: float 15s linear infinite;
+        }
+        
+        .hero {
+            position: relative;
+        }
+        
+        .hero .container {
+            position: relative;
+            z-index: 2;
+        }
+        
+        blockquote {
+            position: relative;
+            padding: 1.5rem 2rem;
+            margin: 1.5rem 0;
+            background-color: rgba(201, 214, 234, 0.3);
+            border-left: 4px solid var(--accent-color);
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        blockquote:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .slogan {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--accent-color);
         }
     </style>
 </head>
@@ -68,9 +130,9 @@
     <!-- About Hero Section -->
     <section class="hero">
         <div class="container">
-            <h1>About Rezulie Ventures</h1>
+            <h1 class="animate-fade-in">About Rezulie Ventures</h1>
             <p>Bringing production-level ML expertise to early-stage startups</p>
-            <p class="slogan" style="font-size: 1.5rem; font-weight: 600; margin-top: 1rem; color: var(--accent-color);">Innovate. Automate. Accelerate.</p>
+            <p class="slogan">Innovate. Automate. Accelerate.</p>
         </div>
     </section>
 
@@ -134,11 +196,11 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="cta">
+    <section class="cta gradient-bg">
         <div class="container">
             <h2>Let's build something together</h2>
             <p>Ready to bring your ML project to life?</p>
-            <p class="slogan" style="font-weight: 600; margin-bottom: 1.5rem;">Innovate. Automate. Accelerate.</p>
+            <p class="slogan">Innovate. Automate. Accelerate.</p>
             <a href="/contact.html" class="btn btn-primary">Get in Touch</a>
         </div>
     </section>
@@ -155,16 +217,16 @@
                 <div class="footer-column">
                     <h3>Quick Links</h3>
                     <ul class="footer-links">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/about.html">About</a></li>
-                        <li><a href="/services.html">Services</a></li>
-                        <li><a href="/contact.html">Contact</a></li>
+                        <li><a href="/" class="hover-lift">Home</a></li>
+                        <li><a href="/about.html" class="hover-lift">About</a></li>
+                        <li><a href="/services.html" class="hover-lift">Services</a></li>
+                        <li><a href="/contact.html" class="hover-lift">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
                     <h3>Contact</h3>
                     <ul class="footer-links">
-                        <li><a href="mailto:info@rezulie.ventures">info@rezulie.ventures</a></li>
+                        <li><a href="mailto:info@rezulie.ventures" class="hover-lift">info@rezulie.ventures</a></li>
                     </ul>
                 </div>
             </div>
@@ -176,5 +238,6 @@
 
     <!-- Scripts -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/animations.js"></script>
 </body>
 </html>
