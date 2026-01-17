@@ -4,99 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thank You | Rezulie Ventures</title>
-    <meta name="description" content="Thank you for contacting Rezulie Ventures. We'll get back to you shortly about your ML consulting inquiry.">
-    
+    <meta name="description" content="Thank you for contacting Rezulie Ventures. We'll get back to you shortly about your AI and ML consulting inquiry.">
+
     <!-- Open Graph / Social Media Meta Tags -->
     <meta property="og:title" content="Thank You | Rezulie Ventures">
-    <meta property="og:description" content="Thank you for contacting Rezulie Ventures. We'll get back to you shortly about your ML consulting inquiry.">
+    <meta property="og:description" content="Thank you for contacting Rezulie Ventures. We'll get back to you shortly about your AI and ML consulting inquiry.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://rezulie.ventures/thank-you.html">
-    
+
     <!-- Canonical URL -->
     <link rel="canonical" href="https://rezulie.ventures/thank-you.html">
-    
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
     <!-- Styles -->
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/animations.css">
-    
+
     <!-- Favicon -->
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <!-- Decorative Orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
     <!-- Header -->
     <header>
         <div class="container header-container">
-            <div class="logo animate-fade-in">
-                <a href="/"><img src="assets/images/logo-horizonal-name.png" alt="Rezulie Ventures" height="50"></a>
+            <div class="logo">
+                <a href="index.html"><img src="assets/images/logo-horizontal-white.svg" alt="Rezulie Ventures" height="50"></a>
             </div>
             <nav>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/about.html">About</a></li>
-                    <li><a href="/services.html">Services</a></li>
-                    <li><a href="/contact.html">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-            <button class="mobile-menu-btn">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
         </div>
     </header>
 
     <!-- Thank You Section -->
-    <section class="section section-light thank-you-section">
-        <div class="container text-center">
+    <section class="thank-you-section">
+        <div class="container">
             <div class="thank-you-content animate-fade-in">
-                <div class="thank-you-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" viewBox="0 0 16 16">
-                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                <div class="thank-you-icon icon-bounce">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="40" cy="40" r="36"></circle>
+                        <polyline points="28 40 36 48 52 32"></polyline>
                     </svg>
                 </div>
                 <h1>Thank You!</h1>
                 <p class="lead">Your message has been successfully sent.</p>
                 <p>We've received your inquiry and will get back to you as soon as possible, typically within 1-2 business days.</p>
                 <div class="thank-you-actions">
-                    <a href="/" class="btn btn-primary">Return to Home</a>
-                    <a href="/services.html" class="btn btn-secondary">Explore Our Services</a>
+                    <a href="index.html" class="btn btn-primary btn-lg">Return to Home</a>
+                    <a href="services.html" class="btn btn-secondary btn-lg">Explore Our Services</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="cta gradient-bg">
+    <section class="cta">
         <div class="container">
             <h2>While you wait...</h2>
-            <p>Learn more about our approach to ML consulting and how we can help your business.</p>
+            <p>Learn more about our approach to AI consulting and how we can help your business.</p>
             <p class="slogan">Innovate. Automate. Accelerate.</p>
-            <a href="/about.html" class="btn btn-primary">About Rezulie Ventures</a>
+            <a href="about.html" class="btn btn-primary btn-lg">About Rezulie Ventures</a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-column animate-fade-in">
+            <div class="footer-content">
+                <div class="footer-column">
                     <h3>Rezulie Ventures</h3>
+                    <p>Helping startups build production-ready AI products.</p>
+                    <p><em>Innovate. Automate. Accelerate.</em></p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
                     <ul class="footer-links">
-                        <li><a href="/" class="hover-lift">Home</a></li>
-                        <li><a href="/about.html" class="hover-lift">About</a></li>
-                        <li><a href="/services.html" class="hover-lift">Services</a></li>
-                        <li><a href="/contact.html" class="hover-lift">Contact</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-column animate-fade-in delay-200">
+                <div class="footer-column">
                     <h3>Contact</h3>
                     <ul class="footer-links">
-                        <li><a href="mailto:info@rezulie.ventures" class="hover-lift">info@rezulie.ventures</a></li>
+                        <li><a href="mailto:info@rezulie.ventures">info@rezulie.ventures</a></li>
                     </ul>
                 </div>
             </div>

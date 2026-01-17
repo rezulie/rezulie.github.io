@@ -3,96 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Rezulie Ventures | ML Consulting</title>
-    <meta name="description" content="Get in touch with Rezulie Ventures for ML consulting services. Connect via email, contact form, or LinkedIn to discuss your machine learning project needs.">
-    
+    <title>Contact Rezulie Ventures | AI & ML Consulting</title>
+    <meta name="description" content="Get in touch with Rezulie Ventures for AI and ML consulting services. Contact us to discuss your machine learning, computer vision, or LLM project needs.">
+
     <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:title" content="Contact Rezulie Ventures | ML Consulting">
-    <meta property="og:description" content="Get in touch with Rezulie Ventures for ML consulting services. Connect via email, contact form, or LinkedIn to discuss your machine learning project needs.">
+    <meta property="og:title" content="Contact Rezulie Ventures | AI & ML Consulting">
+    <meta property="og:description" content="Get in touch with Rezulie Ventures for AI and ML consulting services. Contact us to discuss your AI project needs.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://rezulie.ventures/contact.html">
     <meta property="og:image" content="https://rezulie.ventures/assets/images/logo.png">
-    
+
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Contact Rezulie Ventures | ML Consulting">
-    <meta name="twitter:description" content="Get in touch with Rezulie Ventures for ML consulting services. Connect via email, contact form, or LinkedIn to discuss your machine learning project needs.">
+    <meta name="twitter:title" content="Contact Rezulie Ventures | AI & ML Consulting">
+    <meta name="twitter:description" content="Get in touch with Rezulie Ventures for AI and ML consulting services. Contact us to discuss your AI project needs.">
     <meta name="twitter:image" content="https://rezulie.ventures/assets/images/logo.png">
-    
+
     <!-- Canonical URL -->
     <link rel="canonical" href="https://rezulie.ventures/contact.html">
-    
+
     <!-- Additional SEO Tags -->
-    <meta name="keywords" content="ML consulting contact, machine learning consultant, AI consulting services, contact form, ML project inquiry, technical consulting">
+    <meta name="keywords" content="AI consulting contact, ML consulting, machine learning consultant, LLM consulting, AI project inquiry, AI agents consulting">
     <meta name="author" content="Alireza Shafaei, Rezulie Ventures">
     <meta name="robots" content="index, follow">
-    
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
     <!-- Styles -->
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/animations.css">
-    
+
     <!-- Favicon -->
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
-    
-    <style>
-        /* Additional styles specific to contact page */
-        .contact-methods {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-        
-        .contact-method {
-            background-color: white;
-            padding: 2rem;
-            border-radius: 8px;
-            text-align: center;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .contact-method:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-        
-        .contact-icon {
-            font-size: 2rem;
-            color: var(--accent-color);
-            margin-bottom: 1rem;
-        }
-        
-        .contact-icon svg {
-            width: 3rem;
-            height: 3rem;
-        }
-        
-        .gradient-bg .container {
-            position: relative;
-            z-index: 2;
-        }
-    </style>
 </head>
 <body>
+    <!-- Decorative Orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
     <!-- Header -->
     <header>
         <div class="container header-container">
             <div class="logo">
-                <a href="/"><img src="assets/images/logo-horizonal-name.png" alt="Rezulie Ventures" height="50"></a>
+                <a href="index.html"><img src="assets/images/logo-horizontal-white.svg" alt="Rezulie Ventures" height="50"></a>
             </div>
             <nav>
-                <button class="mobile-menu-btn">☰</button>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/about.html">About</a></li>
-                    <li><a href="/services.html">Services</a></li>
-                    <li><a href="/contact.html">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -100,68 +71,69 @@
 
     <!-- Contact Hero Section -->
     <section class="hero">
-        <div class="particles-container" id="particles-hero"></div>
         <div class="container">
-            <h1 class="animate-fade-in">Get in Touch</h1>
-            <p>Let's discuss how we can help with your ML project</p>
-            <p class="slogan">Innovate. Automate. Accelerate.</p>
+            <p class="overline animate-fade-in">Let's Connect</p>
+            <h1 class="animate-fade-in delay-100">Get in Touch</h1>
+            <p class="animate-fade-in delay-200">Let's discuss how we can help with your ML project</p>
+            <p class="slogan animate-fade-in delay-300">Innovate. Automate. Accelerate.</p>
         </div>
     </section>
 
     <!-- Contact Methods Section -->
-    <section class="section section-light">
+    <section class="section">
         <div class="container">
             <div class="section-title">
                 <h2>Contact Methods</h2>
                 <p>Choose the best way to connect with us</p>
             </div>
-            
+
             <div class="contact-methods">
-                <div class="contact-method">
+                <div class="contact-method card-shine">
                     <div class="contact-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
-                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="4" y="8" width="40" height="32" rx="2"></rect>
+                            <polyline points="4 8 24 24 44 8"></polyline>
                         </svg>
                     </div>
                     <h3>Email Us</h3>
                     <p>For project inquiries, questions, or to schedule a consultation, email is the best way to reach us.</p>
-                    <a href="mailto:info@rezulie.ventures" class="btn btn-primary email-btn">Email Us at info@rezulie.ventures</a>
+                    <a href="mailto:info@rezulie.ventures" class="btn btn-primary">info@rezulie.ventures</a>
                 </div>
-                
-                <div class="contact-method">
+
+                <div class="contact-method card-shine">
                     <div class="contact-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 16 16">
                             <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
                         </svg>
                     </div>
                     <h3>Connect on LinkedIn</h3>
                     <p>Follow Alireza on LinkedIn for updates, insights, and to connect professionally.</p>
-                    <a href="https://www.linkedin.com/in/ashafaei/" target="_blank" class="btn btn-primary">Connect on LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/ashafaei/" target="_blank" class="btn btn-primary">LinkedIn Profile</a>
                 </div>
-                
-                <div class="contact-method">
+
+                <div class="contact-method card-shine">
                     <div class="contact-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
-                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                            <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-9a2 2 0 0 1-2-2z"></path>
+                            <path d="M7 21a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2z"></path>
                         </svg>
                     </div>
                     <h3>Contact Form</h3>
                     <p>Fill out our contact form and we'll get back to you as soon as possible.</p>
-                    <a href="#contact-form" class="btn btn-primary scroll-to">Go to Contact Form</a>
+                    <a href="#contact-form" class="btn btn-primary">Go to Form</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Form Section -->
-    <section id="contact-form" class="section section-dark">
+    <section id="contact-form" class="section">
         <div class="container">
             <div class="section-title">
-                <h2>Get in Touch</h2>
+                <h2>Send a Message</h2>
                 <p>Fill out the form below and we'll respond promptly</p>
             </div>
-            
+
             <div class="form-container">
                 <form action="https://formsubmit.co/83614d24b122e7fe523b0f427ebd9533" method="POST">
                     <!-- FormSubmit.co Configuration -->
@@ -169,34 +141,34 @@
                     <input type="hidden" name="_template" value="table">
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_next" value="https://rezulie.ventures/thank-you.html">
-                    
+
                     <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Your name">
                     </div>
-                    
+
                     <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="your@email.com">
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="company">Company</label>
-                        <input type="text" id="company" name="company">
+                        <input type="text" id="company" name="company" placeholder="Your company name">
                     </div>
-                    
+
                     <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" required>
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" name="subject" required placeholder="What is this regarding?">
                     </div>
-                    
+
                     <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Tell us about your project..."></textarea>
                     </div>
-                    
+
                     <div class="form-group">
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
                     </div>
                 </form>
             </div>
@@ -204,24 +176,24 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="section section-dark">
+    <section class="section">
         <div class="container">
             <div class="section-title">
                 <h2>Frequently Asked Questions</h2>
                 <p>Common questions about working with Rezulie Ventures</p>
             </div>
-            
+
             <div class="faq-container">
                 <div class="faq-item">
                     <h3>What types of projects do you typically work on?</h3>
                     <p>We specialize in ML projects across various domains, with a focus on computer vision, natural language processing, and predictive analytics. Our expertise is particularly valuable for startups looking to integrate ML capabilities into their products or optimize existing ML systems.</p>
                 </div>
-                
+
                 <div class="faq-item">
                     <h3>How long does a typical engagement last?</h3>
                     <p>Engagement length varies based on project scope and complexity. We offer both short-term consulting (2-4 weeks) for specific challenges and longer-term partnerships (3-6 months) for comprehensive ML implementation. We'll work with you to determine the appropriate timeline for your needs.</p>
                 </div>
-                
+
                 <div class="faq-item">
                     <h3>What is your approach to knowledge transfer?</h3>
                     <p>Knowledge transfer is a core part of our process. We document our work thoroughly, provide code reviews and explanations, and conduct training sessions with your team. Our goal is to ensure your team can maintain and extend the ML systems we build together.</p>
@@ -231,12 +203,12 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="cta gradient-bg">
+    <section class="cta">
         <div class="container">
             <h2>Ready to start your ML journey?</h2>
             <p>Reach out today to discuss your project needs.</p>
             <p class="slogan">Innovate. Automate. Accelerate.</p>
-            <a href="mailto:info@rezulie.ventures" class="btn btn-primary email-btn">Email Us at info@rezulie.ventures</a>
+            <a href="mailto:info@rezulie.ventures" class="btn btn-primary btn-lg">Email Us</a>
         </div>
     </section>
 
@@ -246,22 +218,22 @@
             <div class="footer-content">
                 <div class="footer-column">
                     <h3>Rezulie Ventures</h3>
-                    <p>Helping startups build production-ready ML systems.</p>
+                    <p>Helping startups build production-ready AI products.</p>
                     <p><em>Innovate. Automate. Accelerate.</em></p>
                 </div>
                 <div class="footer-column">
                     <h3>Quick Links</h3>
                     <ul class="footer-links">
-                        <li><a href="/" class="hover-lift">Home</a></li>
-                        <li><a href="/about.html" class="hover-lift">About</a></li>
-                        <li><a href="/services.html" class="hover-lift">Services</a></li>
-                        <li><a href="/contact.html" class="hover-lift">Contact</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
                     <h3>Contact</h3>
                     <ul class="footer-links">
-                        <li><a href="mailto:info@rezulie.ventures" class="hover-lift">info@rezulie.ventures</a></li>
+                        <li><a href="mailto:info@rezulie.ventures">info@rezulie.ventures</a></li>
                     </ul>
                 </div>
             </div>

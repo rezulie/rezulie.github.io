@@ -3,56 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rezulie Ventures | ML Consulting for Startups</title>
-    <meta name="description" content="Specialized ML consulting services for startups. Machine Learning, Computer Vision, and ML Infrastructure expertise. Innovate. Automate. Accelerate.">
-    
+    <title>Rezulie Ventures | AI & ML Consulting for Startups</title>
+    <meta name="description" content="AI and ML consulting for startups. Machine Learning, Computer Vision, LLM & AI Agents, and ML Infrastructure expertise. From strategy to production-ready products.">
+
     <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:title" content="Rezulie Ventures | ML Consulting for Startups">
-    <meta property="og:description" content="Specialized ML consulting services for startups. Machine Learning, Computer Vision, and ML Infrastructure expertise. Innovate. Automate. Accelerate.">
+    <meta property="og:title" content="Rezulie Ventures | AI & ML Consulting for Startups">
+    <meta property="og:description" content="AI and ML consulting for startups. Machine Learning, Computer Vision, LLM & AI Agents, and ML Infrastructure expertise. From strategy to production-ready products.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://rezulie.ventures">
     <meta property="og:image" content="https://rezulie.ventures/assets/images/logo.png">
-    
+
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Rezulie Ventures | ML Consulting for Startups">
-    <meta name="twitter:description" content="Specialized ML consulting services for startups. Machine Learning, Computer Vision, and ML Infrastructure expertise.">
+    <meta name="twitter:title" content="Rezulie Ventures | AI & ML Consulting for Startups">
+    <meta name="twitter:description" content="AI and ML consulting for startups. Machine Learning, Computer Vision, LLM & AI Agents, and ML Infrastructure expertise.">
     <meta name="twitter:image" content="https://rezulie.ventures/assets/images/logo.png">
-    
+
     <!-- Canonical URL -->
     <link rel="canonical" href="https://rezulie.ventures">
-    
+
     <!-- Additional SEO Tags -->
-    <meta name="keywords" content="ML consulting, machine learning, computer vision, ML infrastructure, AI consulting, startup ML, AI for startups">
+    <meta name="keywords" content="ML consulting, machine learning, computer vision, ML infrastructure, AI consulting, startup ML, AI for startups, LLM, AI agents, RAG, agentic workflows, conversational AI">
     <meta name="author" content="Alireza Shafaei, Rezulie Ventures">
     <meta name="robots" content="index, follow">
-    
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
     <!-- Styles -->
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/animations.css">
-    
+
     <!-- Favicon -->
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <!-- Decorative Orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
     <!-- Header -->
     <header>
         <div class="container header-container">
             <div class="logo animate-fade-in">
-                <a href="/"><img src="assets/images/logo-horizonal-name.png" alt="Rezulie Ventures" height="50"></a>
+                <a href="index.html"><img src="assets/images/logo-horizontal-white.svg" alt="Rezulie Ventures" height="50"></a>
             </div>
             <nav>
-                <button class="mobile-menu-btn">☰</button>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
                 <ul>
-                    <li class="animate-fade-in delay-100"><a href="/">Home</a></li>
-                    <li class="animate-fade-in delay-200"><a href="/about.html">About</a></li>
-                    <li class="animate-fade-in delay-300"><a href="/services.html">Services</a></li>
-                    <li class="animate-fade-in delay-400"><a href="/contact.html">Contact</a></li>
+                    <li class="animate-fade-in delay-100"><a href="index.html" class="active">Home</a></li>
+                    <li class="animate-fade-in delay-200"><a href="about.html">About</a></li>
+                    <li class="animate-fade-in delay-300"><a href="services.html">Services</a></li>
+                    <li class="animate-fade-in delay-400"><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -60,37 +71,45 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="particles-container" id="particles-hero"></div>
         <div class="container">
-            <h1 class="animate-fade-in">ML Consulting for Startups</h1>
-            <p class="animate-fade-in">Building production-ready ML systems that scale with your business</p>
-            <p class="slogan">Innovate. Automate. Accelerate.</p>
-            <a href="/contact.html" class="btn btn-primary">Get in Touch</a>
+            <p class="overline animate-fade-in">AI & ML Consulting</p>
+            <h1 class="animate-fade-in delay-100">Production-Ready AI Products for Startups</h1>
+            <p class="animate-fade-in delay-200">From ML strategy to deployed products—we build intelligent solutions that scale</p>
+            <p class="slogan animate-fade-in delay-300">Innovate. Automate. Accelerate.</p>
+            <div class="hero-actions animate-fade-in delay-400">
+                <a href="contact.html" class="btn btn-primary btn-lg">Get in Touch</a>
+                <a href="services.html" class="btn btn-secondary btn-lg">View Services</a>
+            </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section class="section section-light">
+    <section class="section">
         <div class="container">
             <div class="section-title">
                 <h2>Our Services</h2>
-                <p>Specialized ML consulting to help you build better products</p>
+                <p>End-to-end AI and ML expertise to build production-ready products</p>
             </div>
             <div class="services-grid">
-                <div class="service-card">
+                <div class="service-card card-shine">
                     <h3>Machine Learning</h3>
                     <p>Custom ML solutions tailored to your specific business needs, from concept to production.</p>
-                    <a href="/services.html" class="btn btn-secondary">Learn More</a>
+                    <a href="services.html" class="btn btn-secondary">Learn More</a>
                 </div>
-                <div class="service-card">
+                <div class="service-card card-shine">
                     <h3>Computer Vision</h3>
-                    <p>Specialized expertise in building systems that can see, understand, and make decisions from visual data.</p>
-                    <a href="/services.html" class="btn btn-secondary">Learn More</a>
+                    <p>Systems that see, understand, and act on visual data for real-world applications.</p>
+                    <a href="services.html" class="btn btn-secondary">Learn More</a>
                 </div>
-                <div class="service-card">
+                <div class="service-card card-shine">
+                    <h3>LLM & AI Agents</h3>
+                    <p>Large language models, RAG systems, and agentic workflows for intelligent automation.</p>
+                    <a href="services.html" class="btn btn-secondary">Learn More</a>
+                </div>
+                <div class="service-card card-shine">
                     <h3>ML Infrastructure</h3>
-                    <p>Scalable, production-ready infrastructure to deploy, monitor, and maintain your ML systems.</p>
-                    <a href="/services.html" class="btn btn-secondary">Learn More</a>
+                    <p>Scalable pipelines, deployment architectures, and MLOps for production environments.</p>
+                    <a href="services.html" class="btn btn-secondary">Learn More</a>
                 </div>
             </div>
         </div>
@@ -105,64 +124,106 @@
                     <p>Rezulie Ventures is led by <a href="https://shafaei.ai" target="_blank">Alireza Shafaei</a>, a Machine Learning expert with a Ph.D. in Machine Learning & Computer Vision from the University of British Columbia (UBC).</p>
                     <p>Prior to founding Rezulie Ventures, Alireza was the co-founder and CTO of Skylab, a computer vision startup that was successfully acquired.</p>
                     <p>Our mission is to help startups build production-ready ML systems that deliver real business value and scale with your growth.</p>
-                    <a href="/about.html" class="btn btn-secondary">More About Us</a>
+                    <a href="about.html" class="btn btn-secondary">More About Us</a>
                 </div>
                 <div class="about-image">
-                    <img src="assets/images/logo-stacked-name.png" alt="Rezulie Ventures" width="300">
+                    <img src="assets/images/logo-stacked-white.svg" alt="Rezulie Ventures" width="300">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="section section-light">
+    <!-- Results We Deliver Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Results We Deliver</h2>
+                <p>What you can expect from working with us</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card card-shine">
+                    <h3>Faster Time-to-Production</h3>
+                    <p>Skip the trial-and-error phase. Our production-first approach gets your AI features to market faster.</p>
+                </div>
+                <div class="service-card card-shine">
+                    <h3>Scalable Architecture</h3>
+                    <p>Systems designed to grow with your business, avoiding costly rewrites as you scale.</p>
+                </div>
+                <div class="service-card card-shine">
+                    <h3>Reduced Technical Debt</h3>
+                    <p>Clean, maintainable code and infrastructure that your team can build upon confidently.</p>
+                </div>
+                <div class="service-card card-shine">
+                    <h3>Team Enablement</h3>
+                    <p>Knowledge transfer ensures your team can maintain and extend the solution independently.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries & Use Cases Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Industries & Use Cases</h2>
+                <p>AI and ML solutions across diverse domains</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card card-shine">
+                    <h3>E-Commerce</h3>
+                    <p>Recommendation engines, visual search, AI-powered customer support, and personalization systems.</p>
+                </div>
+                <div class="service-card card-shine">
+                    <h3>Healthcare</h3>
+                    <p>Medical imaging analysis, clinical NLP, diagnostic support, and patient data processing.</p>
+                </div>
+                <div class="service-card card-shine">
+                    <h3>Fintech</h3>
+                    <p>Fraud detection, risk modeling, document processing, and automated compliance workflows.</p>
+                </div>
+                <div class="service-card card-shine">
+                    <h3>SaaS</h3>
+                    <p>Intelligent automation, conversational AI, content generation, and smart analytics features.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Work With Us Section -->
+    <section class="section">
         <div class="container">
             <div class="section-title">
                 <h2>Why Work With Us</h2>
                 <p>What sets our approach apart</p>
             </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16" style="vertical-align: middle; margin-right: 10px;">
-                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                            <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
-                        </svg>
-                        Production-First Approach
-                    </h3>
-                    <p>We design ML systems with production in mind from day one, avoiding the common pitfalls that lead to technical debt later.</p>
+            <div class="services-grid">
+                <div class="service-card card-shine">
+                    <h3>Production-First Approach</h3>
+                    <p>We design AI systems with production in mind from day one, avoiding pitfalls that lead to technical debt.</p>
                 </div>
-                <div class="testimonial-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16" style="vertical-align: middle; margin-right: 10px;">
-                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                            <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
-                        </svg>
-                        Practical Expertise
-                    </h3>
-                    <p>Our experience spans both academic research and industry implementation, giving us a unique perspective on what works in the real world.</p>
+                <div class="service-card card-shine">
+                    <h3>Deep Practical Expertise</h3>
+                    <p>Ph.D.-level research combined with startup experience—we know what works in the real world.</p>
                 </div>
-                <div class="testimonial-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16" style="vertical-align: middle; margin-right: 10px;">
-                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                            <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
-                        </svg>
-                        Knowledge Transfer
-                    </h3>
-                    <p>We don't just build solutions; we ensure your team understands how to maintain and extend them as your business grows.</p>
+                <div class="service-card card-shine">
+                    <h3>Knowledge Transfer</h3>
+                    <p>We don't just build solutions; we ensure your team can maintain and extend them as you grow.</p>
+                </div>
+                <div class="service-card card-shine">
+                    <h3>End-to-End Delivery</h3>
+                    <p>In-house frontend, backend, and mobile developers to integrate AI into complete products—ship faster.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="cta gradient-bg">
+    <section class="cta">
         <div class="container">
-            <h2>Ready to transform your business with ML?</h2>
-            <p>Let's discuss how our expertise can help you build better products.</p>
+            <h2>Ready to build your AI-powered product?</h2>
+            <p>Let's discuss how our expertise can help you ship faster.</p>
             <p class="slogan">Innovate. Automate. Accelerate.</p>
-            <a href="/contact.html" class="btn btn-primary">Contact Us</a>
+            <a href="contact.html" class="btn btn-primary btn-lg">Get in Touch</a>
         </div>
     </section>
 
@@ -172,22 +233,22 @@
             <div class="footer-content">
                 <div class="footer-column animate-fade-in">
                     <h3>Rezulie Ventures</h3>
-                    <p>Helping startups build production-ready ML systems.</p>
+                    <p>Helping startups build production-ready AI products.</p>
                     <p><em>Innovate. Automate. Accelerate.</em></p>
                 </div>
                 <div class="footer-column animate-fade-in delay-100">
                     <h3>Quick Links</h3>
                     <ul class="footer-links">
-                        <li><a href="/" class="hover-lift">Home</a></li>
-                        <li><a href="/about.html" class="hover-lift">About</a></li>
-                        <li><a href="/services.html" class="hover-lift">Services</a></li>
-                        <li><a href="/contact.html" class="hover-lift">Contact</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-column animate-fade-in delay-200">
                     <h3>Contact</h3>
                     <ul class="footer-links">
-                        <li><a href="mailto:info@rezulie.ventures" class="hover-lift">info@rezulie.ventures</a></li>
+                        <li><a href="mailto:info@rezulie.ventures">info@rezulie.ventures</a></li>
                     </ul>
                 </div>
             </div>
