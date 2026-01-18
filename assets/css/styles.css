@@ -311,17 +311,21 @@ nav a.active {
 
 .mobile-menu-btn {
     display: none;
-    background: var(--glass-bg);
-    border: 1px solid var(--glass-border);
+    background: transparent;
+    border: none;
     font-size: 1.5rem;
     cursor: pointer;
     color: var(--text-primary);
-    padding: 0.5rem;
+    padding: 0.75rem;
     border-radius: var(--radius-sm);
-    transition: background var(--duration-normal) var(--ease-default);
+    transition: all var(--duration-normal) var(--ease-default);
 }
 
 .mobile-menu-btn:hover {
+    background: var(--glass-bg);
+}
+
+.mobile-menu-btn:active {
     background: var(--glass-bg-hover);
 }
 
@@ -1313,12 +1317,14 @@ blockquote {
         top: 100%;
         left: 0;
         right: 0;
-        background: var(--glass-bg);
+        background: rgba(30, 58, 95, 0.98);
         backdrop-filter: blur(var(--blur));
         -webkit-backdrop-filter: blur(var(--blur));
         padding: 1rem;
         border-bottom: 1px solid var(--glass-border);
         gap: 0.5rem;
+        z-index: var(--z-dropdown);
+        box-shadow: var(--shadow-lg);
     }
 
     header.mobile-menu-open nav a {
